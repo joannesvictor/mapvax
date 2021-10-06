@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MapVax: Sistema de Monitoramento</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Leaflet-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">
+          <img src="assets\fotos\logo3.png" alt="MapVax" />
+        </a>
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <!-- <li><a class="title" href="#services">Serviços</a></li>
+          <!-<li><a class="title" href="#testimonials">Depoimentos</a></li>-->
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+        <div id="mapid"></div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="assets\fotos\vacinas.jpg" alt="Vacinas" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              O Map<span>Vax</span> chega ao mercado como uma nova aposta no ramo de monitoramento, idealizado pelos graduandos em Engenharia da Computação, João Fonseca, Devid Barboza e Tatianna Aviz. 
+              
+            </p>
+            <br />
+            <p>
+              Nosso projeto consiste num sistema de monitoramento de vacinas: ao navegar no mapa, é possível encontrar marcadores que indicam a sua temperatura ao clique, além da indicação de conservação ideal ou não.
+            </p>
+            <br />
+            <p>
+              Segundo o Plano Nacional de Imunização do Brasil, as vacinas precisam estar armazenadas em temperatura entre 2ºC e 8ºC. Em decorrência da pandemia do COVID-19, muitos municípios brasileiros perderam a validade dos imunizantes em decorrência da falta de manuseio e conservação em temperatura adequada. O MapVax busca informar e conscientizar as pessoas sobre a importância desses insumos para a saúde nacional e mundial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com MapVax, queremos tirar suas dúvidas, ouvir
+              suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5591982574796&text=Olá! Gostaria de agendar uma Consultoria"
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 91 94002-8922</li>
+              <li><i class="icon-map-pin"></i> WE 61, 671</li>
+              <li><i class="icon-mail"></i> contato@mapvax.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home"><img src="assets\fotos\logoreversa.png" alt="logo"></a>
+          <p>©2021 MapVax.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://www.instagram.com/mapvax/" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com/MapVax" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCTLgsV76Yex8bP4ac7QNcTw" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
+  </body>
+</html>
